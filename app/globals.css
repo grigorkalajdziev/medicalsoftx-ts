@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+:root {
+  --color-navy: #0B1F3A;
+  --color-blue: #1560BD;
+  --color-blue-mid: #2176D9;
+  --color-blue-light: #E8F1FB;
+  --color-offwhite: #F7FAFD;
+  --color-muted: #64748B;
+
+  --font-serif: 'DM Serif Display', Georgia, serif;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+
+.animate-fade-up   { animation: fadeUp 0.6s ease forwards; }
+.animate-fade-up-1 { animation: fadeUp 0.7s ease 0.1s both; }
+.animate-fade-up-2 { animation: fadeUp 0.7s ease 0.2s both; }
+.animate-fade-up-3 { animation: fadeUp 0.7s ease 0.3s both; }
+.animate-fade-up-4 { animation: fadeUp 0.7s ease 0.4s both; }
+.animate-pulse-dot { animation: pulse-dot 2s infinite; }
